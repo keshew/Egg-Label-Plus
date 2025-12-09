@@ -1,10 +1,3 @@
-//
-//  Egg_Label_PlusTests.swift
-//  Egg Label PlusTests
-//
-//  Created by Артём Коротков on 09.12.2025.
-//
-
 import XCTest
 @testable import Egg_Label_Plus
 

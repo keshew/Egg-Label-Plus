@@ -1,10 +1,3 @@
-//
-//  Egg_Label_PlusUITests.swift
-//  Egg Label PlusUITests
-//
-//  Created by Артём Коротков on 09.12.2025.
-//
-
 import XCTest
 
 final class Egg_Label_PlusUITests: XCTestCase {
