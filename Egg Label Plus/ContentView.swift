@@ -38,10 +38,9 @@ struct ContentView: View {
     }
 }
 
-
 struct HomeView: View {
     @EnvironmentObject var historyVM: HistoryViewModel
-
+    @State private var decodedData: EggInfo? = nil
     @State private var codeInput: String = ""
 
     var body: some View {
@@ -59,6 +58,16 @@ struct HomeView: View {
                         .textFieldStyle(RoundedBorderTextFieldStyle())
                         .padding(.horizontal)
 
+                    Button(action: {
+                        decodedData = EggInfo.sampleData(for: codeInput)
+                    }) {
+                        Text("Check code")
+                            .frame(maxWidth: .infinity)
+                    }
+                    .buttonStyle(.borderedProminent)
+                    .padding(.horizontal)
+                    .padding(.top, 4)
+                    .disabled(codeInput.isEmpty)
                     VStack(alignment: .leading, spacing: 6) {
                         Text("Where to find the code on egg or packaging:")
                             .font(.subheadline)
@@ -83,6 +92,15 @@ struct HomeView: View {
                         HistoryListView()
                     }
 
+                    if let egg = decodedData {
+                        EggInfoView(egg: egg)
+                            .padding()
+                            .background(Color.white)
+                            .cornerRadius(10)
+                            .shadow(radius: 3)
+                            .padding(.horizontal)
+                    }
+                    
                     Spacer()
                 }
             }
