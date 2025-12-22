@@ -6,7 +6,22 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		8645FEE12EF9A62D00B3D07F /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 8645FEE02EF9A62D00B3D07F /* FirebaseCore */; };
+		8645FEE32EF9A62D00B3D07F /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 8645FEE22EF9A62D00B3D07F /* FirebaseMessaging */; };
+		8645FEE62EF9A86900B3D07F /* AppsFlyerLib in Frameworks */ = {isa = PBXBuildFile; productRef = 8645FEE52EF9A86900B3D07F /* AppsFlyerLib */; };
+		8645FFDD2EF9AE6C00B3D07F /* NotificationService.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 8645FFD62EF9AE6C00B3D07F /* NotificationService.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8645FFE52EF9AE7B00B3D07F /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 8645FFE42EF9AE7B00B3D07F /* FirebaseMessaging */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
+		8645FFDB2EF9AE6C00B3D07F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 865608FB2EE8986D00DF5D94 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8645FFD52EF9AE6C00B3D07F;
+			remoteInfo = NotificationService;
+		};
 		865609142EE8986E00DF5D94 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 865608FB2EE8986D00DF5D94 /* Project object */;
@@ -23,13 +38,46 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		8645FFE22EF9AE6C00B3D07F /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				8645FFDD2EF9AE6C00B3D07F /* NotificationService.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		8645FFD62EF9AE6C00B3D07F /* NotificationService.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = NotificationService.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		865609032EE8986D00DF5D94 /* Egg Label Plus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Egg Label Plus.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		865609132EE8986E00DF5D94 /* Egg Label PlusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Egg Label PlusTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8656091D2EE8986E00DF5D94 /* Egg Label PlusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Egg Label PlusUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		8645FFDE2EF9AE6C00B3D07F /* Exceptions for "NotificationService" folder in "NotificationService" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 8645FFD52EF9AE6C00B3D07F /* NotificationService */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		8645FFD72EF9AE6C00B3D07F /* NotificationService */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				8645FFDE2EF9AE6C00B3D07F /* Exceptions for "NotificationService" folder in "NotificationService" target */,
+			);
+			path = NotificationService;
+			sourceTree = "<group>";
+		};
 		865609052EE8986D00DF5D94 /* Egg Label Plus */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = "Egg Label Plus";
@@ -48,10 +96,21 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		8645FFD32EF9AE6C00B3D07F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8645FFE52EF9AE7B00B3D07F /* FirebaseMessaging in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		865609002EE8986D00DF5D94 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8645FEE32EF9A62D00B3D07F /* FirebaseMessaging in Frameworks */,
+				8645FEE12EF9A62D00B3D07F /* FirebaseCore in Frameworks */,
+				8645FEE62EF9A86900B3D07F /* AppsFlyerLib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +131,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8645FFE32EF9AE7B00B3D07F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		865608FA2EE8986D00DF5D94 = {
 			isa = PBXGroup;
 			children = (
 				865609052EE8986D00DF5D94 /* Egg Label Plus */,
 				865609162EE8986E00DF5D94 /* Egg Label PlusTests */,
 				865609202EE8986E00DF5D94 /* Egg Label PlusUITests */,
+				8645FFD72EF9AE6C00B3D07F /* NotificationService */,
+				8645FFE32EF9AE7B00B3D07F /* Frameworks */,
 				865609042EE8986D00DF5D94 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,6 +156,7 @@
 				865609032EE8986D00DF5D94 /* Egg Label Plus.app */,
 				865609132EE8986E00DF5D94 /* Egg Label PlusTests.xctest */,
 				8656091D2EE8986E00DF5D94 /* Egg Label PlusUITests.xctest */,
+				8645FFD62EF9AE6C00B3D07F /* NotificationService.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,6 +164,29 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		8645FFD52EF9AE6C00B3D07F /* NotificationService */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8645FFDF2EF9AE6C00B3D07F /* Build configuration list for PBXNativeTarget "NotificationService" */;
+			buildPhases = (
+				8645FFD22EF9AE6C00B3D07F /* Sources */,
+				8645FFD32EF9AE6C00B3D07F /* Frameworks */,
+				8645FFD42EF9AE6C00B3D07F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				8645FFD72EF9AE6C00B3D07F /* NotificationService */,
+			);
+			name = NotificationService;
+			packageProductDependencies = (
+				8645FFE42EF9AE7B00B3D07F /* FirebaseMessaging */,
+			);
+			productName = NotificationService;
+			productReference = 8645FFD62EF9AE6C00B3D07F /* NotificationService.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		865609022EE8986D00DF5D94 /* Egg Label Plus */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 865609272EE8986E00DF5D94 /* Build configuration list for PBXNativeTarget "Egg Label Plus" */;
@@ -102,16 +194,21 @@
 				865608FF2EE8986D00DF5D94 /* Sources */,
 				865609002EE8986D00DF5D94 /* Frameworks */,
 				865609012EE8986D00DF5D94 /* Resources */,
+				8645FFE22EF9AE6C00B3D07F /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				8645FFDC2EF9AE6C00B3D07F /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				865609052EE8986D00DF5D94 /* Egg Label Plus */,
 			);
 			name = "Egg Label Plus";
 			packageProductDependencies = (
+				8645FEE02EF9A62D00B3D07F /* FirebaseCore */,
+				8645FEE22EF9A62D00B3D07F /* FirebaseMessaging */,
+				8645FEE52EF9A86900B3D07F /* AppsFlyerLib */,
 			);
 			productName = "Egg Label Plus";
 			productReference = 865609032EE8986D00DF5D94 /* Egg Label Plus.app */;
@@ -173,6 +270,9 @@
 				LastSwiftUpdateCheck = 1620;
 				LastUpgradeCheck = 1620;
 				TargetAttributes = {
+					8645FFD52EF9AE6C00B3D07F = {
+						CreatedOnToolsVersion = 16.2;
+					};
 					865609022EE8986D00DF5D94 = {
 						CreatedOnToolsVersion = 16.2;
 					};
@@ -195,6 +295,10 @@
 			);
 			mainGroup = 865608FA2EE8986D00DF5D94;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				8645FEDF2EF9A62D00B3D07F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				8645FEE42EF9A86900B3D07F /* XCRemoteSwiftPackageReference "AppsFlyerFramework" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 865609042EE8986D00DF5D94 /* Products */;
 			projectDirPath = "";
@@ -203,11 +307,19 @@
 				865609022EE8986D00DF5D94 /* Egg Label Plus */,
 				865609122EE8986E00DF5D94 /* Egg Label PlusTests */,
 				8656091C2EE8986E00DF5D94 /* Egg Label PlusUITests */,
+				8645FFD52EF9AE6C00B3D07F /* NotificationService */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		8645FFD42EF9AE6C00B3D07F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		865609012EE8986D00DF5D94 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -232,6 +344,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		8645FFD22EF9AE6C00B3D07F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		865608FF2EE8986D00DF5D94 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -256,6 +375,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		8645FFDC2EF9AE6C00B3D07F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8645FFD52EF9AE6C00B3D07F /* NotificationService */;
+			targetProxy = 8645FFDB2EF9AE6C00B3D07F /* PBXContainerItemProxy */;
+		};
 		865609152EE8986E00DF5D94 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 865609022EE8986D00DF5D94 /* Egg Label Plus */;
@@ -269,6 +393,66 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		8645FFE02EF9AE6C00B3D07F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = NotificationService/NotificationService.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = LASU6G6VZS;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NotificationService/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = NotificationService;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.egglabelplusegg.NotificationService;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = egglabel_notif;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8645FFE12EF9AE6C00B3D07F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = NotificationService/NotificationService.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = LASU6G6VZS;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NotificationService/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = NotificationService;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.egglabelplusegg.NotificationService;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = egglabel_notif;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		865609252EE8986E00DF5D94 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -398,6 +582,9 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Egg Label Plus/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Egg-Label-Plus-Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app requires access to the camera to take photos and record videos.";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "We collect usage data to enhance app performance, improve features, and provide a better user experience. Your information remains secure and is not shared with third parties for advertising purposes.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -431,6 +618,9 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Egg Label Plus/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Egg-Label-Plus-Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app requires access to the camera to take photos and record videos.";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "We collect usage data to enhance app performance, improve features, and provide a better user experience. Your information remains secure and is not shared with third parties for advertising purposes.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -525,6 +715,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		8645FFDF2EF9AE6C00B3D07F /* Build configuration list for PBXNativeTarget "NotificationService" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8645FFE02EF9AE6C00B3D07F /* Debug */,
+				8645FFE12EF9AE6C00B3D07F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		865608FE2EE8986D00DF5D94 /* Build configuration list for PBXProject "Egg Label Plus" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -562,6 +761,48 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8645FEDF2EF9A62D00B3D07F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.7.0;
+			};
+		};
+		8645FEE42EF9A86900B3D07F /* XCRemoteSwiftPackageReference "AppsFlyerFramework" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AppsFlyerSDK/AppsFlyerFramework";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.17.8;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8645FEE02EF9A62D00B3D07F /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8645FEDF2EF9A62D00B3D07F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+		8645FEE22EF9A62D00B3D07F /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8645FEDF2EF9A62D00B3D07F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+		8645FEE52EF9A86900B3D07F /* AppsFlyerLib */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8645FEE42EF9A86900B3D07F /* XCRemoteSwiftPackageReference "AppsFlyerFramework" */;
+			productName = AppsFlyerLib;
+		};
+		8645FFE42EF9AE7B00B3D07F /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8645FEDF2EF9A62D00B3D07F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 865608FB2EE8986D00DF5D94 /* Project object */;
 }
