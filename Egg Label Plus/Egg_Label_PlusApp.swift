@@ -8,21 +8,14 @@ import FirebaseMessaging
 
 @main
 struct Egg_Label_PlusApp: App {
-    @StateObject private var historyVM = HistoryViewModel()
-    @StateObject private var favoritesVM = FavoritesViewModel()
-    @StateObject private var settingsVM = SettingsViewModel()
     @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
-                .environmentObject(historyVM)
-                .environmentObject(favoritesVM)
-                .environmentObject(settingsVM)
+            LoadingView()
         }
     }
 }
-
 
 class AppDelegate: NSObject, UIApplicationDelegate, AppsFlyerLibDelegate, MessagingDelegate, UNUserNotificationCenterDelegate, DeepLinkDelegate {
     private var didRequestConversionDataAgain = false
