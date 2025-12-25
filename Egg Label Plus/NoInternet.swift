@@ -17,25 +17,15 @@ struct NoInternet: View {
         VStack {
             if isPortrait {
                 ZStack {
-                    Image("bgland")
+                    Image("inetPor")
                         .resizable()
                         .ignoresSafeArea()
-                    
-                    Image("error")
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .frame(width: 170, height: 150)
                 }
             } else {
                 ZStack {
-                    Image("bgport")
+                    Image("inetHor")
                         .resizable()
                         .ignoresSafeArea()
-                    
-                    Image("error")
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .frame(width: 170, height: 150)
                 }
             }
         }

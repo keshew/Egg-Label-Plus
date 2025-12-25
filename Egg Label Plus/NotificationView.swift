@@ -20,7 +20,7 @@ struct NotificationView: View {
         VStack {
             if isPortrait {
                 ZStack {
-                    Image("bgland")
+                    Image("bgjpor")
                         .resizable()
                         .ignoresSafeArea()
                     
@@ -46,12 +46,6 @@ struct NotificationView: View {
                             }) {
                                 Image("bonuses")
                                     .resizable()
-                                    .overlay {
-                                        Text("Yes, I Want Bonuses!")
-                                            .font(.system(size: 20, weight: .bold))
-                                            .multilineTextAlignment(.center)
-                                            .foregroundStyle(.black)
-                                    }
                                     .aspectRatio(contentMode: .fit)
                                     .frame(width: 350, height: 70)
                             }
@@ -72,7 +66,7 @@ struct NotificationView: View {
                 }
             } else {
                 ZStack {
-                    Image("bgport")
+                    Image("bgjhor")
                         .resizable()
                         .ignoresSafeArea()
                     
@@ -99,12 +93,6 @@ struct NotificationView: View {
                                 }) {
                                     Image("bonuses")
                                         .resizable()
-                                        .overlay {
-                                            Text("Yes, I Want Bonuses!")
-                                                .font(.system(size: 20, weight: .bold))
-                                                .multilineTextAlignment(.center)
-                                                .foregroundStyle(.black)
-                                        }
                                         .frame(width: 260, height: 50)
                                 }
                                 

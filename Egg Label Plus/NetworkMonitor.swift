@@ -94,7 +94,7 @@ struct LoadingView: View {
         VStack {
             if isPortrait {
                 ZStack {
-                    Image("bgland")
+                    Image("loadingport")
                         .resizable()
                         .ignoresSafeArea()
                     
@@ -116,7 +116,7 @@ struct LoadingView: View {
                 }
             } else {
                 ZStack {
-                    Image("bgport")
+                    Image("loadinghor")
                         .resizable()
                         .ignoresSafeArea()
                     
@@ -199,6 +199,9 @@ struct LoadingView: View {
         }
         .fullScreenCover(isPresented: $isMain) {
             ContentView()
+                .environmentObject(HistoryViewModel())
+                .environmentObject(FavoritesViewModel())
+                .environmentObject(SettingsViewModel())
         }
         .fullScreenCover(isPresented: $isInet) {
             NoInternet()
